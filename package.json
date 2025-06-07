@@ -1,0 +1,31 @@
+{
+  "name": "kripto-terimler-sozlugu",
+  "version": "1.0.0",
+  "description": "Kripto para terimleri sözlüğü uygulaması",
+  "main": "dist/bundle.js",
+  "type": "module",
+  "scripts": {
+    "build": "esbuild index.tsx --bundle --outfile=dist/bundle.js --minify --sourcemap --platform=browser --format=esm --jsx-factory=React.createElement --jsx-fragment=React.Fragment --loader:.tsx=tsx",
+    "start": "serve -s . -p 3000",
+    "dev-note": "echo \"Run 'npm run build' first. For development, run 'npm start' to serve files locally.\""
+  },
+  "keywords": [
+    "crypto",
+    "glossary",
+    "react",
+    "typescript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "esbuild": "^0.20.0",
+    "typescript": "^5.0.0",
+    "serve": "^14.2.0"
+  }
+}
